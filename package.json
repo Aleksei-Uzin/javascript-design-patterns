@@ -1,0 +1,24 @@
+{
+  "name": "javascript-design-patterns",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aleksei-Uzin/javascript-design-patterns.git"
+  },
+  "keywords": [],
+  "author": "Aliaksei-Uzin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aleksei-Uzin/javascript-design-patterns/issues"
+  },
+  "homepage": "https://github.com/Aleksei-Uzin/javascript-design-patterns#readme",
+  "dependencies": {
+    "jsdom": "^26.1.0"
+  }
+}
