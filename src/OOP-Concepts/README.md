@@ -24,6 +24,10 @@ _Taken from:_
 
 - [MDN: Object-oriented programming](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Advanced_JavaScript_objects/Object-oriented_programming)
 
+## Object Oriented Javascript Examples
+
+- [Property Attributes](./Property_Attributes.js)
+
 ## Resources
 
-1. [The S.O.L.I.D Principles in Pictures](https://medium.com/backticks-tildes/the-s-o-l-i-d-principles-in-pictures-b34ce2f1e898)
+- [The S.O.L.I.D Principles in Pictures](https://medium.com/backticks-tildes/the-s-o-l-i-d-principles-in-pictures-b34ce2f1e898)
