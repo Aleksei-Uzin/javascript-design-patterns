@@ -1,17 +1,25 @@
 {
   "name": "javascript-design-patterns",
-  "type": "module",
   "version": "1.0.0",
-  "description": "",
+  "description": "Design patterns implemented on JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write ./src",
+    "lint": "eslint ./src/**",
+    "lint-fix": "eslint --fix ./src/**",
+    "test": "jest",
+    "coverage": "npm run test -- --coverage",
+    "prepare": "husky && husky install"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Aleksei-Uzin/javascript-design-patterns.git"
   },
-  "keywords": [],
+  "keywords": [
+    "computer-science",
+    "design patterns",
+    "javascript"
+  ],
   "author": "Aliaksei-Uzin",
   "license": "ISC",
   "bugs": {
@@ -20,5 +28,23 @@
   "homepage": "https://github.com/Aleksei-Uzin/javascript-design-patterns#readme",
   "dependencies": {
     "jsdom": "^26.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.28.6",
+    "@babel/preset-env": "7.28.6",
+    "babel-jest": "30.2.0",
+    "eslint": "8.57.1",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-import": "2.32.0",
+    "eslint-plugin-jest": "29.12.1",
+    "husky": "9.1.7",
+    "jest": "30.2.0",
+    "lint-staged": "16.2.7",
+    "prettier": "3.8.0"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*./src": "prettier --write"
   }
 }
