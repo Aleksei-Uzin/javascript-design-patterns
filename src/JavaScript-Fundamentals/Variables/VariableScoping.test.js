@@ -46,7 +46,7 @@ describe('JavaScript Variable Scoping: var vs let/const', () => {
     shadowingExample();
   });
 
-  it('shows let Temporal Dead Zone behavior', () => {
+  it('demonstrates let Temporal Dead Zone behavior', () => {
     let outerLet = 'outer';
 
     function temporalDeadZone() {
