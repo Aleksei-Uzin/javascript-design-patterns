@@ -19,6 +19,21 @@ describe('Computed Property Name Destructuring', () => {
     expect(role).toBe('Software Engineer');
   });
 
+  it('Compares destructuring vs bracket notation', () => {
+    const obj = { name: 'Aleksei', role: 'Frontend Engineer', active: true };
+    const key = 'role';
+
+    // Traditional bracket notation
+    const traditionalValue = obj[key];
+
+    // Dynamic destructuring approach
+    const { [key]: destructuredValue } = obj;
+
+    expect(traditionalValue).toBe('Frontend Engineer');
+    expect(destructuredValue).toBe('Frontend Engineer');
+    expect(traditionalValue).toBe(destructuredValue);
+  });
+
   it('Shows practical use in functions', () => {
     function getProperty(obj, propertyName) {
       const { [propertyName]: value } = obj;
