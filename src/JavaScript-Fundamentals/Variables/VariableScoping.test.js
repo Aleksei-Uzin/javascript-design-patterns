@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 describe('JavaScript Variable Scoping: var vs let/const', () => {
-  it('demonstrates var function scope vs let/const block scope', () => {
+  it('Demonstrates var function scope vs let/const block scope', () => {
     function scopeComparison() {
       if (true) {
         var x = 10; // function-scoped
@@ -17,7 +17,7 @@ describe('JavaScript Variable Scoping: var vs let/const', () => {
     scopeComparison();
   });
 
-  it('shows var ignores nested block boundaries', () => {
+  it('Shows var ignores nested block boundaries', () => {
     function deeplyNested() {
       for (let i = 0; i < 1; i++) {
         if (true) {
@@ -32,7 +32,7 @@ describe('JavaScript Variable Scoping: var vs let/const', () => {
     deeplyNested();
   });
 
-  it('demonstrates var hoisting and variable shadowing', () => {
+  it('Demonstrates var hoisting and variable shadowing', () => {
     var outerVar = 'outer';
 
     function shadowingExample() {
@@ -46,7 +46,7 @@ describe('JavaScript Variable Scoping: var vs let/const', () => {
     shadowingExample();
   });
 
-  it('demonstrates let Temporal Dead Zone behavior', () => {
+  it('Demonstrates let Temporal Dead Zone behavior', () => {
     let outerLet = 'outer';
 
     function temporalDeadZone() {
