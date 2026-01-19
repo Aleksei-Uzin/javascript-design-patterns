@@ -51,6 +51,6 @@ const config = {
    * @see https://jestjs.io/docs/configuration#verbose-boolean
    */
   verbose: false,
-}
+};
 
-export default config
+export default config;
