@@ -1,19 +1,15 @@
 describe('Computed Property Name Destructuring', () => {
-  it('Extracts properties using dynamic keys', () => {
+  it('Should extract properties using dynamic keys', () => {
     const obj = { name: 'Aleksei', role: 'Frontend Engineer', active: true };
     const key = 'role';
-
-    // Use computed property syntax to destructure with dynamic key
     const { [key]: extractedValue } = obj;
 
     expect(extractedValue).toBe('Frontend Engineer');
   });
 
-  it('Supports default values with computed properties', () => {
+  it('Should support default values when property is missing', () => {
     const obj = { name: 'Aleksei', active: true };
     const key = 'role';
-
-    // Provide default value when property doesn't exist
     const { [key]: role = 'Software Engineer' } = obj;
 
     expect(role).toBe('Software Engineer');
@@ -25,7 +21,6 @@ describe('Computed Property Name Destructuring', () => {
 
     // Traditional bracket notation
     const traditionalValue = obj[key];
-
     // Dynamic destructuring approach
     const { [key]: destructuredValue } = obj;
 

@@ -1,8 +1,6 @@
 describe('Nested Rest Destructuring Patterns', () => {
-  it('Demonstrates nested destructuring with rest operator', () => {
+  it('Should destructure nested arrays with rest operator', () => {
     const array = [1, 2, 3, 4, 5, 6];
-
-    // Rest operator collects remaining elements, then immediately destructures them
     const [a, b, ...[c, d]] = array;
 
     expect(a).toBe(1);
@@ -11,10 +9,8 @@ describe('Nested Rest Destructuring Patterns', () => {
     expect(d).toBe(4);
   });
 
-  it('Handles missing elements gracefully', () => {
+  it('Should assign undefined when elements are missing', () => {
     const array = [1, 2];
-
-    // Missing elements become undefined
     const [a, b, ...[c, d]] = array;
 
     expect(a).toBe(1);
