@@ -2,7 +2,7 @@
 
 describe('JavaScript let Declaration Binding Lists', () => {
   it('Demonstrates binding list syntax vs comma operator', () => {
-    // Comma operator in expressions evaluates left-to-right, returns last value
+    // Comma Operator in expressions evaluates left-to-right, returns last value
     let x = (1, 2, 3);
     expect(x).toBe(3);
 
@@ -16,11 +16,8 @@ describe('JavaScript let Declaration Binding Lists', () => {
   });
 
   it('Shows initializer vs assignment operator differences', () => {
-    /**
-     * In a let declaration, the = sign introduces an initializer, not a runtime assignment.
-     * The difference is subtle:
-     */
-
+    // In a let declaration, the = sign introduces an initializer, not a runtime assignment.
+    // The difference is subtle:
     // Initializer in let: creates a new binding and optionally gives it an initial value
     let x = 5;
     expect(x).toBe(5);
@@ -40,7 +37,7 @@ describe('JavaScript let Declaration Binding Lists', () => {
     expect(c).toBe(3);
   });
 
-  it('Shows Temporal Dead Zone in binding lists', () => {
+  it('Should throw ReferenceError when accessing later bindings (TDZ)', () => {
     // ❌ Cannot reference variables declared later in the same binding list
     expect(() => {
       // prettier-ignore
