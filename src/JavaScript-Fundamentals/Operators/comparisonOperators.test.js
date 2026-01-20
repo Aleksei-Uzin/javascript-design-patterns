@@ -19,14 +19,14 @@ describe('JavaScript Relational Operators (<= and >=)', () => {
     expect(2 >= 1).toBe(true); // !(2 < 1) → !(false) → true
   });
 
-  it('Shows type coercion in relational comparisons', () => {
+  it('Demonstrates type coercion in relational comparisons', () => {
     // String "2" is coerced to number 2 for comparison
     expect(2 <= '2').toBe(true); // 2 <= 2 after coercion
     expect('2' >= 2).toBe(true); // 2 >= 2 after coercion
     expect('5' >= 3).toBe(true); // 5 >= 3 after coercion
   });
 
-  it('Contrasts relational vs equality operator behavior', () => {
+  it('Compares relational vs equality operator behavior', () => {
     const num = 2;
     const str = '2';
 
@@ -46,9 +46,7 @@ describe('JavaScript Relational Operators (<= and >=)', () => {
       },
     };
 
-    const result = obj >= 2;
-
-    expect(result).toBe(true);
+    expect(obj >= 2).toBe(true);
   });
 
   it('Shows edge cases with NaN comparisons', () => {

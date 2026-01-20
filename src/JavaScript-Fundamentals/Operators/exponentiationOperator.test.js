@@ -5,9 +5,18 @@ describe('JavaScript Exponentiation Operator (**)', () => {
     expect(2 ** 3).toBe(8);
     expect(3 ** 2).toBe(9);
     expect(5 ** 0).toBe(1);
+    expect(0 ** 0).toBe(1);
   });
 
-  it('Shows precedence issues with unary negation', () => {
+  it('Should return NaN for negative base with fractional exponent', () => {
+    expect((-2) ** 0.5).toBeNaN();
+  });
+
+  it('should return Infinity for large exponent results', () => {
+    expect(2 ** 1024).toBe(Infinity);
+  });
+
+  it('Demonstrates precedence issues with unary negation', () => {
     expect(() => {
       eval('-2 ** 3');
     }).toThrow(SyntaxError);
