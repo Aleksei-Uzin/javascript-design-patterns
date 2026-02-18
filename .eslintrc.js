@@ -1,5 +1,5 @@
 module.exports = {
-  env: { 'jest/globals': true },
+  env: { 'jest/globals': true, es2022: true },
   extends: 'airbnb-base',
   plugins: ['jest'],
   parserOptions: {
@@ -8,8 +8,12 @@ module.exports = {
   },
   rules: {
     'arrow-body-style': 'off',
-    'no-useless-escape': 'off',
+    'func-names': ['error', 'as-needed'],
+    'no-extend-native': 'off',
     'no-plusplus': 'off',
+    'no-prototype-builtins': 'off',
+    'no-restricted-syntax': ['error', 'WithStatement'],
+    'no-useless-escape': 'off',
     'object-curly-newline': [
       'error',
       {
