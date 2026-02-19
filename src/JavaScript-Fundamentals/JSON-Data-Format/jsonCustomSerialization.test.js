@@ -13,7 +13,7 @@ describe('JSON Custom Serialization', () => {
   });
 
   it('Should serialize BigInt as a string by default', () => {
-    const data = { count: 12345678901234567890n };
+    const data = { amount: 12345678901234567890n };
 
     BigInt.prototype.toJSON = function serializeBigInt() {
       return this.toString();
@@ -21,11 +21,11 @@ describe('JSON Custom Serialization', () => {
 
     const json = JSON.stringify(data);
 
-    expect(json).toBe('{"count":"12345678901234567890"}');
+    expect(json).toBe('{"amount":"12345678901234567890"}');
   });
 
   it('Should preserve BigInt precision using JSON.rawJSON', () => {
-    const data = { count: 12345678901234567890n };
+    const data = { amount: 12345678901234567890n };
 
     BigInt.prototype.toJSON = function serializeBigInt() {
       return JSON.rawJSON(this.toString());
@@ -33,13 +33,13 @@ describe('JSON Custom Serialization', () => {
 
     const json = JSON.stringify(data);
 
-    expect(json).toBe('{"count":12345678901234567890}');
+    expect(json).toBe('{"amount":12345678901234567890}');
 
-    const { count } = JSON.parse(json, (key, value, context) => {
-      if (key === 'count') return BigInt(context.source);
+    const parsed = JSON.parse(json, (key, value, context) => {
+      if (key === 'amount') return BigInt(context.source);
       return value;
     });
 
-    expect(count).toBe(12345678901234567890n);
+    expect(parsed.amount).toBe(12345678901234567890n);
   });
 });
