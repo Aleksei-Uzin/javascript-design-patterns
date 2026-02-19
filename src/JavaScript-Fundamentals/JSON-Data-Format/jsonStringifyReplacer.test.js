@@ -22,7 +22,7 @@ describe('JSON.stringify Replacer Parameter', () => {
     });
   });
 
-  describe('when provided as a Function', () => {
+  describe('When provided as a Function', () => {
     it('Should use "this" context to access parent object properties', () => {
       const order = [
         { name: 'Laptop', price: 1200, isGift: false },
