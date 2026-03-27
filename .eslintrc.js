@@ -9,6 +9,7 @@ module.exports = {
   rules: {
     'arrow-body-style': 'off',
     'func-names': ['error', 'as-needed'],
+    'generator-star-spacing': 'off',
     'no-extend-native': 'off',
     'no-plusplus': 'off',
     'no-prototype-builtins': 'off',
