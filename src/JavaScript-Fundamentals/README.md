@@ -2,20 +2,20 @@
 
 ## Table of Contents
 
-1. [Variables](./Variables/README.md)
+1. [Variables](./Variables/)
 
-2. [Operators](./Operators/README.md)
+2. [Operators](./Operators/)
 
-3. [Destructuring](./Destructuring/README.md)
+3. [Destructuring](./Destructuring/)
 
-4. [Arrays](./Arrays/README.md)
+4. [Arrays](./Arrays/)
 
-5. [Loops](./Loops/README.md)
+5. [Loops](./Loops/)
 
-6. [Strings](./Strings/README.md)
+6. [Strings](./Strings/)
 
-7. [Objects](./Objects/README.md)
+7. [Objects](./Objects/)
 
-8. [JSON Data Format](./JSON-Data-Format/README.md)
+8. [JSON Data Format](./JSON-Data-Format/)
 
-9. [Iterators and Generators](./Iterators-and-Generators/README.md)
+9. [Iterators and Generators](./Iterators-and-Generators/)
