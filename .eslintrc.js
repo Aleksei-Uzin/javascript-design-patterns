@@ -14,6 +14,7 @@ module.exports = {
     'no-plusplus': 'off',
     'no-prototype-builtins': 'off',
     'no-restricted-syntax': ['error', 'WithStatement'],
+    'no-unreachable-loop': 'off',
     'no-useless-escape': 'off',
     'object-curly-newline': [
       'error',
