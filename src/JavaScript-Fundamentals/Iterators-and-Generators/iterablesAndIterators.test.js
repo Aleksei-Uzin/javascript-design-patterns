@@ -21,7 +21,6 @@ describe('Iterables and Iterators', () => {
       },
     };
 
-    // Custom iterable works with for...of and spread operator
     expect([...fruits]).toEqual(['apple', 'banana', 'cherry']);
   });
 
@@ -36,7 +35,6 @@ describe('Iterables and Iterators', () => {
     const iterator = infiniteCounter[Symbol.iterator]();
     const results = [];
 
-    // Manually control iteration to avoid infinite loop
     for (let i = 0; i < 5; i++) {
       results.push(iterator.next().value);
     }
