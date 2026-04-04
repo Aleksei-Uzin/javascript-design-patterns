@@ -39,7 +39,7 @@ describe('Generator Control Flow', () => {
     });
   });
 
-  describe('Return Values vs. Iteration Consumers', () => {
+  describe('Return Values vs Iteration Consumers', () => {
     function* generatorWithReturn() {
       yield 'apple';
       yield 'banana';
