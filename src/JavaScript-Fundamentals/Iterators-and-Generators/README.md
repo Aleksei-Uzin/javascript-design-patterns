@@ -14,21 +14,13 @@
 
 3. [Collection‑like behavior](./collectionLikeIterable.test.js)
    - Should behave like data: **restartable**, **independent**, **repeatable**
-   - Return a new iterator each time
+   - Suitable for: **Arrays**, **Sets**, **Maps**
+   - `[Symbol.iterator]()` return a new iterator each time
 
 4. [Process‑like behavior](./processLikeIterator.test.js)
    - Should behave like machines: **stateful**, **continuous**, **non‑restartable**
-   - Return this
-
-### Collection vs Process Iterables
-
-| Behavior                     | Collection‑like    | Process‑like                  |
-| ---------------------------- | ------------------ | ----------------------------- |
-| Restartable                  | ✅ Yes             | ❌ No                         |
-| New iterator each time       | ✅ Yes             | ❌ No                         |
-| Independent consumers        | ✅ Yes             | ❌ No                         |
-| Suitable for                 | Arrays, Sets, Maps | Generators, streams, counters |
-| `[Symbol.iterator]()` return | A new iterator     | `this`                        |
+   - Suitable for: **Generators**, **streams**, **counters**
+   - `[Symbol.iterator]()` return `this`
 
 ## Use Cases
 
