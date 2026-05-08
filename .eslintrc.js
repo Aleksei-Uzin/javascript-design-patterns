@@ -8,6 +8,7 @@ module.exports = {
   },
   rules: {
     'arrow-body-style': 'off',
+    'arrow-parens': ['error', 'as-needed'],
     'func-names': ['error', 'as-needed'],
     'generator-star-spacing': 'off',
     'no-extend-native': 'off',
