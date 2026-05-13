@@ -16,7 +16,7 @@ describe('Resolved vs Fulfilled Promises', () => {
           events.push('4. database save completed');
 
           resolve({ saved: true, user });
-        }, 10);
+        }, 1);
       });
     }
 

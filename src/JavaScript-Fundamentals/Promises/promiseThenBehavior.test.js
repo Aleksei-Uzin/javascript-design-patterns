@@ -45,7 +45,7 @@ describe('Promise.then()', () => {
       setTimeout(() => {
         events.push('inner resolved');
         resolve('pending inner value');
-      }, 10);
+      }, 1);
     });
 
     const promise = Promise.resolve().then(() => {
