@@ -1,5 +1,5 @@
 describe('Promise.then()', () => {
-  it('Return a new pending promise immediately regardless of current promise status', async () => {
+  it('Returns a new pending promise regardless of current promise status', async () => {
     const settled = Promise.resolve('value');
     const newPromise = settled.then(v => v);
 
@@ -10,14 +10,20 @@ describe('Promise.then()', () => {
     expect(result).toBe('value');
   });
 
-  it('Fulfills with returned value when handler returns a value', async () => {
-    const result = await Promise.resolve().then(() => 'returned value');
-    expect(result).toBe('returned value');
+  it('Fulfills with returned value or undefined', async () => {
+    const promiseA = Promise.resolve().then(() => 'value');
+    const promiseB = Promise.resolve().then(() => {});
+
+    await expect(promiseA).resolves.toBe('value');
+    await expect(promiseB).resolves.toBeUndefined();
   });
 
-  it('Fulfills with undefined when handler returns nothing', async () => {
-    const result = await Promise.resolve().then(() => {});
-    expect(result).toBeUndefined();
+  it('Fulfills or rejects based on returned inner promise state', async () => {
+    const fulfilled = Promise.resolve().then(() => Promise.resolve('inner value'));
+    const rejected = Promise.resolve().then(() => Promise.reject(new Error('inner rejection')));
+
+    await expect(fulfilled).resolves.toBe('inner value');
+    await expect(rejected).rejects.toThrow('inner rejection');
   });
 
   it('Rejects with thrown error when handler throws', async () => {
@@ -26,16 +32,6 @@ describe('Promise.then()', () => {
     });
 
     await expect(promise).rejects.toThrow('handler error');
-  });
-
-  it('Fulfills with inner promise value when handler returns fulfilled promise', async () => {
-    const result = await Promise.resolve().then(() => Promise.resolve('inner value'));
-    expect(result).toBe('inner value');
-  });
-
-  it('Rejects with inner promise reason when handler returns rejected promise', async () => {
-    const promise = Promise.resolve().then(() => Promise.reject(new Error('inner rejection')));
-    await expect(promise).rejects.toThrow('inner rejection');
   });
 
   it('Stays pending until inner promise resolves when handler returns pending promise', async () => {
@@ -59,14 +55,13 @@ describe('Promise.then()', () => {
     expect(events).toEqual(['handler runs', 'inner resolved']);
   });
 
-  it('Demonstrates floating promise: missing return (fulfills with undefined)', async () => {
+  it('Demonstrates floating promise: missing return fulfills with undefined', async () => {
     const fetchData = () => Promise.resolve('https://example.com');
 
     const promise = fetchData().then(() => {
       Promise.resolve('Response value');
     });
 
-    const result = await promise;
-    expect(result).toBeUndefined();
+    await expect(promise).resolves.toBeUndefined();
   });
 });
