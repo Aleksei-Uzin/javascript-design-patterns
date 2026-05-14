@@ -1,10 +1,12 @@
 # Destructuring
 
-1. [Nested Rest Destructuring](./nestedRestDestructuring.test.js)
-   - **Pattern** `...[a, b]`
+## Contents
 
-2. [Dynamic Property Destructuring](./dynamicPropertyDestructuring.test.js)
-   - **Computed property keys**
+### Array Destructuring
 
-3. [Array Method Extraction](./arrayMethodExtraction.test.js)
-   - **Rest with object pattern**
+- [Nested Rest Destructuring](./nestedRestDestructuring.test.js) - `...[a, b]` pattern, traditional vs nested approach
+- [Array Method Extraction](./arrayMethodExtraction.test.js) - extracting methods using rest with object pattern `...{ pop, push }`
+
+### Object Destructuring
+
+- [Dynamic Property Destructuring](./dynamicPropertyDestructuring.test.js) - computed property keys `{ [key]: value }`
