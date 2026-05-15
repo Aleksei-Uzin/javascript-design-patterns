@@ -19,6 +19,10 @@
 - [Promise.resolve()](./promiseResolve.test.js) - thenable unwrapping and identity behavior
 - [Promise.reject()](./promiseReject.test.js) - no unwrapping, always new instance
 
+### Practical Examples
+
+- [Event Loop Order](./eventLoopOrder.test.js) - microtask vs macrotask execution order
+
 ## Additional Resources
 
 - [web.dev: JavaScript Promises: an introduction](https://web.dev/articles/promises?hl=en)
