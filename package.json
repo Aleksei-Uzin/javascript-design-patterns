@@ -2,7 +2,7 @@
   "name": "javascript-design-patterns",
   "version": "1.0.0",
   "description": "Design patterns implemented on JavaScript",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "format": "prettier --write ./src",
     "format:check": "prettier --check ./src",
