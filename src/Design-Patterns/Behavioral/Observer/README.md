@@ -17,3 +17,19 @@ A JavaScript implementation of the Observer design pattern.
 
 - [geeksforgeeks: Observer Method Design Pattern in Java](https://www.geeksforgeeks.org/system-design/observer-method-design-pattern-in-java/)
 - [Refactoring Guru: Observer](https://refactoring.guru/design-patterns/observer)
+
+## Running the Project
+
+```bash
+# Navigate to the project folder
+cd src/Design-Patterns/Behavioral/Observer
+
+# Install dependencies
+npm install
+
+# Start development server with HMR
+npm start
+
+# Build for production
+npm run build
+```
