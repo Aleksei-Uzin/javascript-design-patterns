@@ -3,34 +3,26 @@
 ## Domains
 
 <details>
-<summary>1. JavaScript Fundamentals</summary>
+<summary><strong>JavaScript Fundamentals</strong></summary>
 
 - [Variables](./src/JavaScript-Fundamentals/Variables/)
-
 - [Operators](./src/JavaScript-Fundamentals/Operators/)
-
 - [Destructuring](./src/JavaScript-Fundamentals/Destructuring/)
-
 - [Arrays](./src/JavaScript-Fundamentals/Arrays/)
-
 - [Loops](./src/JavaScript-Fundamentals/Loops/)
-
 - [Strings](./src/JavaScript-Fundamentals/Strings)
-
-- [Objects](./src/JavaScript-Fundamentals/Objects/)
-
+- [Objects & OOP Concepts](./src/JavaScript-Fundamentals/Objects/)
 - [JSON Data Format](./src/JavaScript-Fundamentals/JSON-Data-Format/)
-
 - [Iterators and Generators](./src/JavaScript-Fundamentals/Iterators-and-Generators/)
-
 - [Promises](./src/JavaScript-Fundamentals/Promises/)
 
 </details>
 
-2. [OOP Concepts](./src/OOP-Concepts/)
+### Design Patterns
 
-3. [Creational Design Patterns](./src/Creational-Patterns/)
+<details>
+<summary><strong>Behavioral Patterns</strong></summary>
 
-4. [Behavioral Design Patterns](./src/Behavioral-Patterns/)
+- [Observer](./src/Design-Patterns/Behavioral/Observer/)
 
-5. [Structural Design Patterns](./src/Structural-Patterns/)
+</details>
