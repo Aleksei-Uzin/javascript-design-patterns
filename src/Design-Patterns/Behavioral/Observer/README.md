@@ -2,6 +2,8 @@
 
 A JavaScript implementation of the Observer design pattern.
 
+🔗 **[Live Demo](https://observer-pattern-task-manager.netlify.app/)**
+
 ## Project Structure
 
 | Component / File                                         | Type              | Responsibility                                    |
