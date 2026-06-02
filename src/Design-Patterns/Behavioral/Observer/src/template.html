@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <h1><%= htmlWebpackPlugin.options.title %></h1>
+
+    <form id="task-info">
+      <label for="new-task-input">New task description</label>
+      <input
+        autocomplete="off"
+        id="new-task-input"
+        name="newTaskInput"
+        placeholder="Enter task description..."
+        type="text"
+        required
+      />
+      <button type="submit">Add task</button>
+    </form>
+
+    <label>
+      <input id="controlCheckbox" type="checkbox" />
+      Mark all tasks as completed
+    </label>
+
+    <ul id="tasks-list"></ul>
+  </body>
+</html>
