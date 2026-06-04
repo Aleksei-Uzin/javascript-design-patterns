@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <h1><%= htmlWebpackPlugin.options.title %></h1>
+
+    <section class="controls" id="controls">
+      <button data-event="fetch/user" id="fetch-user-button">Fetch User</button>
+    </section>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>User name</th>
+          <th>
+            <p>Email</p>
+            <button class="unsubscribed" id="unsubscribe-email">unsubscribe</button>
+          </th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </body>
+</html>
