@@ -24,5 +24,6 @@
 <summary><strong>Behavioral Patterns</strong></summary>
 
 - [Observer](./src/Design-Patterns/Behavioral/Observer/)
+- [Publish–Subscribe (Pub/Sub)](./src/Design-Patterns/Behavioral/Publish-Subscribe/)
 
 </details>
