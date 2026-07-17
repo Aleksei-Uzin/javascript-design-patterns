@@ -9,6 +9,7 @@
 - [Operators](./src/JavaScript-Fundamentals/Operators/)
 - [Destructuring](./src/JavaScript-Fundamentals/Destructuring/)
 - [Arrays](./src/JavaScript-Fundamentals/Arrays/)
+- [Functions](./src/JavaScript-Fundamentals/Functions/)
 - [Loops](./src/JavaScript-Fundamentals/Loops/)
 - [Strings](./src/JavaScript-Fundamentals/Strings)
 - [Objects & OOP Concepts](./src/JavaScript-Fundamentals/Objects/)
