@@ -13,3 +13,6 @@
 
 4. [Function.prototype.bind() with new](./FunctionPrototypeBindWithNew.test.js)
    - `bind()` cannot change whether a function is constructable; only the target function can enforce constructor-only or function-only usage
+
+5. [Function.prototype.call.bind behavior](./functionPrototypeCallBind.test.js)
+   - transforms a method requiring a specific `this` value into a utility function that accepts `this` as a normal parameter
