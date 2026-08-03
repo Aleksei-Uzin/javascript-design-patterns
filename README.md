@@ -19,6 +19,13 @@
 
 </details>
 
+<details>
+<summary><strong>Object-oriented programming in JavaScript</strong></summary>
+
+- [OOP Principles (characteristics)](./src/OOP/OOP-Principles/)
+
+</details>
+
 ### Design Patterns
 
 <details>
