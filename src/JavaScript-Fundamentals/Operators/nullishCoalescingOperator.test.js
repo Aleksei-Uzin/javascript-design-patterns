@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 describe('Nullish Coalescing Operator (??)', () => {
   it('Should return right operand when left is null or undefined', () => {
     expect(null ?? 'default').toBe('default');
