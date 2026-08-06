@@ -37,6 +37,13 @@
 ### Design Patterns
 
 <details>
+<summary><strong>Creational Patterns</strong></summary>
+
+- [Singleton](./src/Design-Patterns/Creational/Singleton/)
+
+</details>
+
+<details>
 <summary><strong>Behavioral Patterns</strong></summary>
 
 - [Observer](./src/Design-Patterns/Behavioral/Observer/)
