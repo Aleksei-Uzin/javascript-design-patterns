@@ -1,5 +1,21 @@
 # JavaScript Design Patterns
 
+Software design patterns and JavaScript fundamentals with executable test examples.
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 20.2 or newer
+
+### Installation
+
+```bash
+git clone git@github.com:Aleksei-Uzin/javascript-design-patterns.git
+cd javascript-design-patterns
+npm install
+```
+
 ## Domains
 
 <details>
