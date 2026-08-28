@@ -68,13 +68,44 @@ npm install
 
 ### npm Scripts
 
-- `npm run format` — Format with Prettier.
-- `npm run format:check` — Check formatting.
-- `npm run lint` — Run ESLint.
-- `npm run lint:fix` — Fix ESLint issues.
-- `npm test` — Run tests.
-- `npm run test:watch` — Run tests in watch mode.
-- `npm run test:coverage` — Run tests with coverage.
-- `npm run validate` — Run linting, formatting checks, and tests.
+#### Format with Prettier / Check formatting
 
-`npm run prepare` runs automatically after installation to set up Husky hooks.
+```bash
+npm run format
+```
+
+```bash
+npm run format:check
+```
+
+#### Run ESLint / Fix ESLint issues
+
+```bash
+npm run lint
+```
+
+```bash
+npm run lint:fix
+```
+
+#### Run tests / Run tests in watch mode / Run tests with coverage
+
+```bash
+npm test
+```
+
+```bash
+npm run test:watch
+```
+
+```bash
+npm run test:coverage
+```
+
+#### Run linting, formatting checks, and tests
+
+```bash
+npm run validate
+```
+
+`npm run prepare` - runs automatically after installation to set up Husky hooks.
