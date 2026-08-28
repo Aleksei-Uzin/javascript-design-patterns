@@ -13,8 +13,9 @@
 ---
 
 - [Objects](./src/JavaScript-Fundamentals/Objects/)
-- [Arrays](./src/JavaScript-Fundamentals/Arrays/)
 - [Strings](./src/JavaScript-Fundamentals/Strings/)
+- [Arrays](./src/JavaScript-Fundamentals/Arrays/)
+- [TypedArray](./src/JavaScript-Fundamentals/TypedArray/)
 
 ---
 
