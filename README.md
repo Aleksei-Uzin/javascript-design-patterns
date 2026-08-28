@@ -108,4 +108,4 @@ npm run test:coverage
 npm run validate
 ```
 
-`npm run prepare` — Set up Husky hooks; runs automatically.
+`npm run prepare` - set up Husky hooks; runs automatically.
