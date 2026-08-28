@@ -1,20 +1,6 @@
 # JavaScript Design Patterns
 
-Software design patterns and JavaScript fundamentals with executable test examples.
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js 20.2 or newer
-
-### Installation
-
-```bash
-git clone git@github.com:Aleksei-Uzin/javascript-design-patterns.git
-cd javascript-design-patterns
-npm install
-```
+This repository contains practical examples of software design patterns and JavaScript fundamentals, with executable test examples.
 
 ## Domains
 
@@ -67,3 +53,28 @@ npm install
 - [Publish–Subscribe (Pub/Sub)](./src/Design-Patterns/Behavioral/Publish-Subscribe/)
 
 </details>
+
+## Getting Started
+
+**Prerequisites:** Node.js 20.2+
+
+### Installation
+
+```bash
+git clone git@github.com:Aleksei-Uzin/javascript-design-patterns.git
+cd javascript-design-patterns
+npm install
+```
+
+### npm Scripts
+
+- `npm run format` — Format with Prettier.
+- `npm run format:check` — Check formatting.
+- `npm run lint` — Run ESLint.
+- `npm run lint:fix` — Fix ESLint issues.
+- `npm test` — Run tests.
+- `npm run test:watch` — Run tests in watch mode.
+- `npm run test:coverage` — Run tests with coverage.
+- `npm run validate` — Run linting, formatting checks, and tests.
+
+`npm run prepare` runs automatically after installation to set up Husky hooks.
