@@ -7,7 +7,7 @@ describe('Singleton - TypeScript', () => {
     ({ default: Singleton } = await import('../SingletonTypeScript.ts'));
   });
 
-  it('returns the same instance on subsequent calls', () => {
+  it('Demonstrates return the same instance', () => {
     const instanceA = Singleton.getInstance();
     const instanceB = Singleton.getInstance();
 
