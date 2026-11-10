@@ -17,7 +17,7 @@ A creational design pattern that restricts a class to a single instance and prov
 
 - [Static Private Field](./SingletonStaticPrivateField.js) - stores the instance in a static private class field `static #instance`, keeping the state fully encapsulated within the class. [Tests](./__tests__/SingletonStaticPrivateField.test.js)
 
-- [TypeScript version](./SingletonTypeScript.ts) - uses a private constructor and a static `getInstance()` method to expose instance. [Tests](./SingletonTypeScript.ts)
+- [TypeScript version](./SingletonTypeScript.ts) - uses a private constructor and a static `getInstance()` method to expose instance. [Tests](./__tests__/SingletonTypeScript.test.ts)
 
 ## Resources
 
