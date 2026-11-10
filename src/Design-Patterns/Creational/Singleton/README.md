@@ -1,11 +1,24 @@
 # Singleton
 
-A creational pattern that ensures a class has only one instance and provides a global access point to it.
+A creational design pattern that restricts a class to a single instance and provides a global access point to that instance.
+
+## Trade-offs and limitations
+
+- Global mutable state.
+- Hidden dependencies.
+- Difficult unit testing and isolation.
+- Tight coupling to a particular instance.
+- Initialization and lifecycle complexity.
+- Limited flexibility when multiple instances become necessary.
 
 ## Implementations
 
-- [Constructor Return](./SingletonConstructorReturn.js) - stores the instance in a module-level variable. The constructor returns it on every subsequent call. [Tests](./__tests__/SingletonConstructorReturn.test.js)
+- [Factory Object](./SingletonFactory.js) - delegates instantiation to a separate factory object `SingletonFactory` with a `getInstance()` method. [Tests](./__tests__/SingletonFactory.test.js)
 
-- [Static Private Fields](./SingletonStaticPrivateFields.js) - stores the instance in a static private class field (`static #instance`), keeping the state fully encapsulated within the class. [Tests](./__tests__/SingletonStaticPrivateFields.test.js)
+- [Static Private Field](./SingletonStaticPrivateField.js) - stores the instance in a static private class field `static #instance`, keeping the state fully encapsulated within the class. [Tests](./__tests__/SingletonStaticPrivateField.test.js)
 
-- [Tester (factory object)](./SingletonTester.js) - delegates instantiation to a separate factory object (`SingletonTester`) with a `getInstance()` method, decoupling creation logic from the class itself. [Tests](./__tests__/SingletonTester.test.js)
+- [TypeScript version](./SingletonTypeScript.ts) - uses a private constructor and a static `getInstance()` method to expose instance. [Tests](./SingletonTypeScript.ts)
+
+## Resources
+
+- [Refactoring.Guru](https://refactoring.guru/design-patterns/singleton/typescript/example) - demonstrates a Singleton implementation using a getter `Singleton.instance` to provide access to the instance.
