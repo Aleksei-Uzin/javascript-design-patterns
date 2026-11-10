@@ -1,6 +1,6 @@
 class Singleton {
   constructor(options = {}) {
-    this.name = 'Singleton';
+    this.name = 'SingletonCoords';
     this.pointX = options.pointX ?? 0;
     this.pointY = options.pointY ?? 10;
   }
@@ -8,15 +8,14 @@ class Singleton {
 
 let instance;
 
-const SingletonTester = {
-  name: 'SingletonTester',
-  getInstance(options) {
+const SingletonFactory = {
+  getInstance(initialOptions) {
     if (!instance) {
-      instance = new Singleton(options);
+      instance = new Singleton(initialOptions);
     }
 
     return instance;
   },
 };
 
-export default SingletonTester;
+export default SingletonFactory;
